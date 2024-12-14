@@ -211,6 +211,7 @@ function SimulatorWidget(node) {
 
   function Memory() {
     var memArray = new Array(0x600);
+    window._memarr = memArray; // for installing preassembled binaries
 
     function set(addr, val) {
       return memArray[addr] = val;
